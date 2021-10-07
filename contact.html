@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+
+    <title>Stratigraphy</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/vendor/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="https://use.fontawesome.com/9b701ba3c8.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+</head>
+<body>
+
+<nav class="colorlib-nav" role="navigation">
+    <div class="top-menu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div id="colorlib-logo"><a href="index.html">Stratigraphy</a></div>
+                </div>
+                <div class="col-xs-10 text-right menu-1">
+                    <ul>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="blog.html">Articles</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="terms.html">Terms and conditions</a></li>
+                        <li><a href="policy.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<style>
+    @media screen and (max-width: 768px) {
+        .colorlib-nav {
+            margin: 0;
+        }
+    }
+
+    .colorlib-nav {
+        border-bottom: 1px solid #e4e4e4;
+    }
+
+    .colorlib-nav .top-menu {
+        padding: 25px 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .colorlib-nav .top-menu {
+            padding: 28px 1em;
+        }
+    }
+
+    .colorlib-nav #colorlib-logo {
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        font-family: "Grand Hotel", cursive;
+        line-height: 40px;
+    }
+
+    .colorlib-nav #colorlib-logo a {
+        position: relative;
+        color: #000;
+    }
+
+    @media screen and (max-width: 768px) {
+        .colorlib-nav .menu-1 {
+            display: none;
+        }
+    }
+
+    .colorlib-nav ul {
+        padding: 0;
+        margin: 5px 0 0 0;
+    }
+
+    .colorlib-nav ul li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: inline;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .colorlib-nav ul li a {
+        position: relative;
+        font-size: 12px;
+        padding: 10px 15px;
+        color: rgba(0, 0, 0, 0.7);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    .colorlib-nav ul li a:hover {
+        color: #F6490D;
+    }
+
+    .colorlib-nav ul li.has-dropdown {
+        position: relative;
+    }
+
+    .colorlib-nav ul li.has-dropdown .dropdown {
+        width: 140px;
+        -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
+        z-index: 1002;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        text-align: left;
+        background: #000;
+        padding: 20px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-transition: 0s;
+        -o-transition: 0s;
+        transition: 0s;
+    }
+
+    .colorlib-nav ul li.has-dropdown .dropdown:before {
+        bottom: 100%;
+        left: 40px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: #000;
+        border-width: 8px;
+        margin-left: -8px;
+    }
+
+    .colorlib-nav ul li.has-dropdown .dropdown li {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    .colorlib-nav ul li.has-dropdown .dropdown li:last-child {
+        margin-bottom: 0;
+    }
+
+    .colorlib-nav ul li.has-dropdown .dropdown li a {
+        padding: 2px 0;
+        display: block;
+        color: #999999;
+        line-height: 1.2;
+        text-transform: none;
+        font-size: 13px;
+        letter-spacing: 0;
+    }
+
+    .colorlib-nav ul li.has-dropdown .dropdown li a:hover {
+        color: #fff;
+    }
+
+    .colorlib-nav ul li.has-dropdown:hover a, .colorlib-nav ul li.has-dropdown:focus a {
+        color: #F6490D;
+    }
+
+    .colorlib-nav ul li.btn-cta a {
+        padding: 30px 0px !important;
+        color: #fff;
+    }
+
+    .colorlib-nav ul li.btn-cta a span {
+        background: #f6490d;
+        padding: 4px 10px;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        border-radius: 100px;
+    }
+
+    .colorlib-nav ul li.btn-cta a:hover span {
+        -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
+    }
+
+    .colorlib-nav ul li.active > a {
+        color: #F6490D !important;
+        position: relative;
+    }
+
+    .colorlib-nav ul li.active > a:after {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+</style>
+
+<div class="contact-area section_padding_80">
+    <div class="container">
+        <!-- Contact Info Area Start -->
+        <div class="contact-info-area section_padding_80_50">
+            <div class="row">
+                <!-- Single Contact Info -->
+                <div class="col-12 col-md-4">
+                    <div class="single-contact-info mb-30 text-center fadeInUp">
+                        <p>64383 Champlin Rapid Apt. 417
+Streichstad, NE 13166 <br> Email: marina.mcglynn@barrows.com <br> Phone: +2399475417069</p>
+                    </div>
+                </div>
+                <!-- Single Contact Info -->
+                <div class="col-12 col-md-4">
+                    <div class="single-contact-info mb-30 text-center fadeInUp">
+                        <p>8248 Carter Ridge Apt. 597
+Dariobury, IA 33096-7949 <br> Email: marina.mcglynn@barrows.com <br> Phone: +7764123165057</p>
+                    </div>
+                </div>
+                <!-- Single Contact Info -->
+                <div class="col-12 col-md-4">
+                    <div class="single-contact-info mb-30 text-center fadeInUp">
+                        <p>231 Lupe Gateway
+South Kenyaton, DE 12603-6021 <br> Email: marina.mcglynn@barrows.com <br> Phone: +3456451048001</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Form  -->
+        <div class="contact-form-area">
+            <div class="row">
+
+                <div class="col-12 col-md-7 item" style="height: 587px;">
+                    <div class="contact-form fadeInUpBig">
+                        <h2 class="contact-form-title mb-30">Leave a comment</h2>
+                        <!-- Contact Form -->
+                        <form action="thanks.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="contact-lastname" placeholder="Lastname">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="contact-phone" placeholder="Phone number">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="The text of the comment"></textarea>
+                                <label class="terms-field">
+                                    <input type="checkbox" name="terms" value="check" required="">
+                                    <a href="policy.html" target="_blank">
+                                        I have read and agree to the terms of the user agreement
+                                    </a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn contact-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .section_padding_80 {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .section_padding_80_50 {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+    .pagination-area .page-status p, .contact-info-area .single-contact-info p {
+        margin-bottom: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        color: #232d37;
+        line-height: 1.25;
+    }
+    .h2, h2 {
+        font-size: 2rem;
+    }
+    .contact-form .form-control, .comment-form .form-control {
+        border: 1px solid #ebebeb;
+        height: 50px;
+    }
+    .contact-form textarea.form-control, .comment-form textarea.form-control {
+        height: 130px;
+    }
+    .terms-field {
+        margin-top: 10px;
+    }
+
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        font-weight: 500;
+        outline: none;
+    }
+
+    .contact-btn {
+        margin-top: 25px;
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+        background-color: #fc6c3f;
+        border-radius: 30px;
+    }
+</style>
+
+<div class="foot-nav">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="terms.html">Terms and conditions</a></li>
+            <li><a href="policy.html">Privacy policy</a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+</div>
+
+<div class="copyright">
+    <div class="container">
+        <p>©All rights reserved</p>
+    </div>
+</div>
+
+<style>
+    .foot-nav ul li {
+        display: inline-block;
+        float: left;
+    }
+
+    .foot-nav li a {
+        color: #fff;
+        font-size: 1em;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .foot-nav {
+        background: #fa4b2a;
+    }
+
+    .foot-nav ul {
+        margin: 0;
+        padding: 0.65em 0;
+    }
+
+    .foot-nav li a {
+        color: #fff;
+        font-size: 0.95em;
+        padding: 0.7em 1.5em;
+        text-decoration: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+    }
+
+    .copyright {
+        background: #fece14;
+        padding: 1em 0;
+        text-align: center;
+    }
+
+    .copyright p {
+        margin-bottom: 0;
+    }
+</style>
